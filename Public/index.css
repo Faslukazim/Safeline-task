@@ -1,0 +1,541 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope&family=Open+Sans:wght@300;400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Manrope", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  transition: all 0.3s ease;
+}
+
+.container {
+  height: auto;
+  max-width: 1440px;
+  overflow: hidden;
+  margin: 0 auto;
+  padding: 50px 90px;
+}
+
+#home,
+#services,
+#about,
+#vision,
+#utilities,
+#contactus,
+footer {
+  padding: 30px 0px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+article,
+button {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+header {
+  height: 80px;
+  background: #ffff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 1rem;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 10;
+}
+
+header ul {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+
+.navigation a {
+  text-decoration: none;
+  color: #414141;
+  line-height: 120%;
+}
+
+.navigation a:hover {
+  padding-bottom: 15px;
+  border-bottom: solid 4px #91c257;
+  color: #010101;
+  font-weight: 700;
+}
+
+.logo {
+  width: 130px;
+  height: 48px;
+}
+
+.banner {
+  height: auto;
+  display: flex;
+  justify-content: center;
+  place-items: center;
+  gap: 1rem;
+  margin-top: 5rem;
+}
+
+.banner .bannerimg {
+  max-width: 75%;
+  height: 60%;
+  clip-path: polygon(44% -14%, 100% 0%, 100% 100%, 12% 100%, 0% 63%);
+}
+
+.banner .left-half {
+  padding: 0px 20px;
+  width: 50%;
+}
+
+.banner .left-half h1 {
+  font-size: 46px;
+  line-height: 119%;
+}
+
+.bannerbtn {
+  padding: 11px 62px;
+  margin-top: 50px;
+  font-size: 15px;
+  border-radius: 3px;
+  color: #ffff;
+  background: #95c24d;
+  border: none;
+}
+
+.content2 {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  place-items: center;
+  padding: 30px 10px;
+}
+
+.content2 p {
+  width: 50%;
+  font-size: 36px;
+  line-height: 130%;
+  color: #020202;
+}
+
+#services {
+  background: #f4f4f4;
+}
+
+.headings {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 30px 0px;
+}
+
+.service-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  width: 60%;
+}
+
+.services .card {
+  position: relative;
+  width: 266px;
+  height: 188px;
+  background-color: rgb(252, 249, 249);
+}
+
+.services .card h4 {
+  position: absolute;
+  left: 16px;
+  top: 135px;
+  width: 146px;
+  height: 48px;
+}
+
+.services .card img {
+  position: absolute;
+  right: 25px;
+  top: 14px;
+}
+
+.help-card {
+  position: relative;
+  width: 263px;
+  height: 401px;
+  background-color: #95c24d;
+}
+
+.help-services {
+  position: relative;
+  display: grid;
+  place-items: center;
+}
+
+.help-card h4 {
+  position: absolute;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 130%;
+  top: 25px;
+  left: 30px;
+}
+
+.help-card img {
+  position: absolute;
+  top: 98px;
+  left: 155px;
+}
+
+.help-card p {
+  position: absolute;
+  top: 219px;
+  left: 42px;
+  font-weight: 300;
+}
+
+.headings {
+  padding: 20px 0px 0px 35px;
+}
+
+.utility-head {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.utilities {
+  background: #ffff;
+  display: flex;
+  flex-wrap: wrap;
+  place-items: center;
+  text-align: center;
+  justify-content: center;
+
+  gap: 1rem;
+  width: 100%;
+  padding: 60px 10px;
+  position: relative;
+}
+
+#about {
+  background: #f4f4f4;
+}
+
+.aboutus {
+  display: flex;
+  place-items: center;
+  flex-wrap: wrap-reverse;
+  justify-content: center;
+  position: relative;
+}
+
+.aboutleft {
+  width: 50%;
+}
+
+.aboutright {
+  position: relative;
+}
+
+.aboutimg {
+  z-index: 11;
+  clip-path: polygon(0% 19%, 100% 20%, 100% 100%, 0% 100%, 0% 100%);
+}
+
+.element {
+  width: 0;
+  height: 0;
+  border-left: 70px solid #95c24d;
+  border-right: 246px solid #95c24d;
+  border-bottom: 501px solid #95c24d;
+  position: absolute;
+  top: 0px;
+  left: 172px;
+}
+
+#vision {
+  background: #fff;
+}
+
+.vision {
+  display: flex;
+  place-items: center;
+  flex-wrap: wrap-reverse;
+  justify-content: center;
+  gap: 4rem;
+  position: relative;
+}
+
+.vision .vision-left {
+  width: 50%;
+}
+
+.vision-left ul {
+  flex-direction: column;
+  list-style: none;
+}
+
+.visionimg {
+  clip-path: polygon(51% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 101%);
+  z-index: 3;
+}
+
+.vision-right {
+  position: relative;
+}
+
+.triangle {
+  width: 0;
+  height: 0;
+  border-left: 70px solid transparent;
+  border-right: 163px solid transparent;
+  border-bottom: 303px solid #95c24d;
+  position: absolute;
+  top: 94px;
+}
+
+.profiles {
+  background: #95c24d;
+  display: flex;
+  place-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  text-align: justify;
+  padding: 100px 0px;
+  position: relative;
+}
+
+.profile1 {
+  width: 439px;
+  height: 489px;
+  display: flex;
+  background: #fff;
+  position: relative;
+}
+
+.profile1 h4 {
+  width: 180px;
+  height: 68px;
+}
+
+.readmore {
+  color: #95c24d;
+}
+
+.profile1-card {
+  width: 60%;
+  padding: 20px 8px;
+}
+
+.profile1-card .quoteimg {
+  height: 29px;
+  position: absolute;
+  top: 106px;
+  left: 239px;
+}
+
+.profile1-card img {
+  height: 26px;
+  position: absolute;
+  top: 115px;
+  left: 244px;
+}
+
+.profile1 img {
+  width: 241px;
+  height: 287px;
+  position: absolute;
+  top: 202px;
+  left: 197px;
+}
+
+.profiles .design1 {
+  position: absolute;
+  top: -62px;
+  right: -38px;
+}
+
+.profiles .design2 {
+  position: absolute;
+  top: 401px;
+  left: -65px;
+}
+
+#contactus {
+  background: #fff;
+}
+
+.contactus {
+  display: flex;
+  justify-content: space-around;
+  background: rgb(241 243 219 / 82%);
+  padding: 100px 70px;
+}
+
+.contactus h2 {
+  padding-bottom: 30px;
+}
+
+.formleft {
+  position: relative;
+}
+
+.mobileicon {
+  height: 16px;
+  position: absolute;
+  top: 63px;
+  left: -9px;
+}
+
+.telephoneicon {
+  height: 13px;
+  position: absolute;
+  top: 89px;
+  left: -12px;
+}
+
+.formright {
+  display: flex;
+  flex-direction: column;
+}
+
+.formright input,
+textarea {
+  margin-bottom: 5px;
+  border-radius: 9px;
+  border: none;
+}
+
+.formbtn {
+  padding: 2px 0px;
+  width: 80px;
+  margin-left: auto;
+  font-size: 12px;
+  color: #ffff;
+  border-radius: 3px;
+  background-color: #95c24d;
+  border: none;
+}
+
+.info {
+  height: 390px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+footer {
+  height: 80px;
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 0px 20px;
+  background-color: #23242a;
+  color: #fff;
+}
+
+@media screen and (max-width: 760px) {
+  .hamburger {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 2;
+  }
+
+  .line {
+    width: 30px;
+    height: 2px;
+    background-color: #333;
+    display: block;
+    margin: 5px;
+  }
+
+  .navigation {
+    background-color: #fff;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    transition: all 0.5s;
+    width: 80%;
+    z-index: 1;
+  }
+
+  .navigation.active {
+    right: 0;
+  }
+
+  .navigation ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+  }
+
+  .navigation a {
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+    color: #333;
+  }
+
+  header {
+    justify-content: flex-start;
+  }
+
+  .banner {
+    flex-wrap: wrap-reverse;
+  }
+
+  .banner .left-half h1 {
+    font-size: 35px;
+    line-height: 119%;
+  }
+
+  .bannerbtn {
+    padding: 9px 25px;
+  }
+
+  .content2 {
+    flex-wrap: wrap-reverse;
+  }
+
+  .content2 p {
+    font-size: 31px;
+  }
+
+  .container {
+    padding: 20px 45px;
+  }
+}
+
+@media screen and (max-width: 954px) {
+  .service-list {
+    width: 100%;
+    justify-content: center;
+  }
+}
+.card:hover,
+.help-card:hover,
+button:hover,.utilities-card:hover,
+.profile1-card:hover {
+  transform: scale(1.03);
+  transition: ease all 0.3s;
+  border-radius: 5px;
+}
