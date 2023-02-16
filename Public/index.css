@@ -26,7 +26,15 @@ html {
 #utilities,
 #contactus,
 footer {
-  padding: 30px 0px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+#services,
+#about,
+#vision,
+#utilities,
+#contactus,
+footer {
+  padding: 60px 0px;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
@@ -84,8 +92,7 @@ header ul {
 }
 
 .banner .bannerimg {
-  max-width: 75%;
-  height: 60%;
+  max-width: 60%;
   clip-path: polygon(44% -14%, 100% 0%, 100% 100%, 12% 100%, 0% 63%);
 }
 
@@ -176,6 +183,7 @@ header ul {
 }
 
 .help-services {
+  padding-top: 20px;
   position: relative;
   display: grid;
   place-items: center;
@@ -225,7 +233,9 @@ header ul {
   padding: 60px 10px;
   position: relative;
 }
-
+.majanimg{
+  height: 108px;
+}
 #about {
   background: #f4f4f4;
 }
@@ -239,7 +249,9 @@ header ul {
 }
 
 .aboutleft {
+  padding-top: 10px;
   width: 50%;
+  font-size: 12px;
 }
 
 .aboutright {
@@ -323,11 +335,6 @@ header ul {
   position: relative;
 }
 
-.profile1 h4 {
-  width: 180px;
-  height: 68px;
-}
-
 .readmore {
   color: #95c24d;
 }
@@ -335,6 +342,7 @@ header ul {
 .profile1-card {
   width: 60%;
   padding: 20px 8px;
+  position: relative;
 }
 
 .profile1-card .quoteimg {
@@ -344,19 +352,12 @@ header ul {
   left: 239px;
 }
 
-.profile1-card img {
-  height: 26px;
-  position: absolute;
-  top: 115px;
-  left: 244px;
-}
-
 .profile1 img {
-  width: 241px;
+  width: 240px;
   height: 287px;
   position: absolute;
-  top: 202px;
-  left: 197px;
+  bottom: 0px;
+  right: 0px;
 }
 
 .profiles .design1 {
@@ -407,6 +408,7 @@ header ul {
 .formright {
   display: flex;
   flex-direction: column;
+  padding-top: 15px;
 }
 
 .formright input,
@@ -428,7 +430,6 @@ textarea {
 }
 
 .info {
-  height: 390px;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -517,12 +518,76 @@ footer {
   }
 
   .content2 p {
-    font-size: 31px;
+    font-size: 23px;
+    width: 100%;
+}
   }
 
   .container {
     padding: 20px 45px;
   }
+  .visionimg {
+    height: 225px;
+  }
+  .triangle {
+    width: 0;
+    height: 0;
+    border-left: 56px solid transparent;
+    border-right: 95px solid transparent;
+    border-bottom: 204px solid #95c24d;
+    position: absolute;
+    top: 21px;
+  }
+  .banner .left-half h1 {
+    font-size: 25px;
+    line-height: 119%;
+}
+  .profiles {
+    padding: 100px 9px;
+  }
+  .profile1 {
+    width: 312px;
+    height: 425px;
+    display: flex;
+    background: #fff;
+    position: relative;
+  }
+  .profile1 img {
+    width: 119px;
+    height: 189px;
+  }
+  .profile1-card .quoteimg {
+    left: 176px;
+  }
+  .info img {
+    width: 100%;
+  }
+  .contactus {
+    flex-direction: column;
+  }
+  p,
+  li {
+    font-size: 12px;
+  }
+  .aboutleft {
+    padding: 15px 10px;
+    width: 100%;
+  }
+  .aboutimg{
+    height: 355px;
+  
+  }
+  .element {
+    
+    border-right: 160px solid #95c24d;
+    border-bottom: 355px solid #95c24d;
+    left: 71px;
+  }
+  .vision .vision-left {
+    width: 100%;
+    padding: 0px 15px;
+  }
+  
 }
 
 @media screen and (max-width: 954px) {
@@ -533,7 +598,8 @@ footer {
 }
 .card:hover,
 .help-card:hover,
-button:hover,.utilities-card:hover,
+button:hover,
+.utilities-card:hover,
 .profile1-card:hover {
   transform: scale(1.03);
   transition: ease all 0.3s;
