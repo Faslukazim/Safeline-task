@@ -35,7 +35,6 @@ footer {
 #contactus,
 footer {
   padding: 60px 0px;
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 article,
@@ -511,6 +510,7 @@ footer {
 
   .bannerbtn {
     padding: 9px 25px;
+    margin-bottom:20px ;
   }
 
   .content2 {
@@ -521,11 +521,11 @@ footer {
     font-size: 23px;
     width: 100%;
 }
-  }
+  
 
   .container {
-    padding: 20px 45px;
-  }
+    padding: 0px 9px;
+}
   .visionimg {
     height: 225px;
   }
@@ -559,9 +559,7 @@ footer {
   .profile1-card .quoteimg {
     left: 176px;
   }
-  .info img {
-    width: 100%;
-  }
+  
   .contactus {
     flex-direction: column;
   }
@@ -586,6 +584,9 @@ footer {
   .vision .vision-left {
     width: 100%;
     padding: 0px 15px;
+  }
+  .info img {
+    width: 100%;
   }
   
 }
